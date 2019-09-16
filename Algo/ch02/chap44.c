@@ -1,14 +1,20 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+#define N 5
+#define _LJH
 #ifdef _LJH
+
 int main()
 {
-
-	printf("          =========°ö¼ÀÇ¥=========\n");
-	for (int i = 1; i <= 10; i++) {
-		for (int j = 1; j <= 10; j++) {
-			printf(" %3d ", i * j);
-		}
-		printf("\n");
+	int i;
+	int a[N];
+	for (i = 0; i < N; i++) {
+		printf("a[%d] : ", i);
+		scanf("%d", &a[i]);
 	}
-}#endif
+	puts("°¢¿ä¼ÒÀÇ °ª");
+	for (i = 0; i < N; i++) {
+		printf("a[%d] = %d\n", i, a[i]);
+	}
+}
+#endif
