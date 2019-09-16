@@ -15,16 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="chap21.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="chapQ14.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="chap38.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="chap40.c">
+    <ClCompile Include="chap44.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

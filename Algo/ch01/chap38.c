@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+#ifdef _LJH
 int main()
 {
 	int a;
@@ -15,7 +16,5 @@ int main()
 		puts("");
 	}
 
-	
-	
 }
-
+#endif
