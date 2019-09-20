@@ -18,5 +18,8 @@
     <ClCompile Include="chap44.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="chap49.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

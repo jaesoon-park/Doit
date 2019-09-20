@@ -1,8 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #define N 5
-#define _LJH
-#ifdef _LJH
+
+
+#ifdef _PJS
 
 int main()
 {
