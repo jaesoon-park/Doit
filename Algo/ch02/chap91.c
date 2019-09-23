@@ -2,7 +2,6 @@
 #include <stdio.h>
 #define VMAX 21
 
-#define _PJS
 #ifdef _PJS
 typedef struct{
 	char  name[20];
