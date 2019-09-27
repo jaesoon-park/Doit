@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define _PJS
+
 
 #ifdef _PJS
 int search(const int a[], int n, int key)
