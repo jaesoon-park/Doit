@@ -7,6 +7,7 @@
 
 int Initialize(IntStack *s, int max) {
 	s->ptr = 0;
+	s->ptrB = max;
 	if ((s->stk = calloc(max, sizeof(int))) == NULL) {
 		s->max = 0;
 		return -1;
@@ -16,10 +17,17 @@ int Initialize(IntStack *s, int max) {
 }
 
 int Push(IntStack *s, int x) {
-	if (s->ptr >= s->max) {
+	if (s->ptr >= s->ptrB) {
 		return -1;
 	}
 	s->stk[s->ptr++] = x;
+	return 0;
+}
+int PushB(IntStack *s, int y) {
+	if (s->ptrB <= s->ptr) {
+		return -1;
+	}
+	s->stk[s->ptrB--] = y;
 	return 0;
 }
 
@@ -28,6 +36,13 @@ int Pop(IntStack *s, int *x) {
 		return -1;
 	}
 	*x = s->stk[--s->ptr];
+	return 0;
+}
+int PopB(IntStack *s, int *y) {
+	if (s->ptrB >= max) {
+		return -1;
+	}
+	*y = s->stk[++s->ptrB];
 	return 0;
 }
 
@@ -56,7 +71,7 @@ int IsEmpty(const IntStack *s) {
 }
 
 int IsFull(const IntStack *s) {
-	return s->ptr >= s->max;
+	return s->ptr == s->ptrB;
 }
 
 int Search(const IntStack *s, int x) {

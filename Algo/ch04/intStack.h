@@ -6,6 +6,7 @@
 typedef struct {
 	int max;
 	int ptr;
+	int ptrB;
 	int *stk;
 }IntStack;
 int Initialize(IntStack *s, int max);//스택초기화
@@ -20,6 +21,8 @@ int IsFull(const IntStack *s);//스택이 가득찼나요?
 int Search(const IntStack *s, int x);//스태에서 검색
 void Print(const IntStack *s);//모든데이터 출력
 void Terminate(IntStack *s);// 스택종료 
+int PushB(IntStack *s, int y);
+int PopB(IntStack *s, int *y);
 	
 
 
