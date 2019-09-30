@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define _PJS
 
 #ifdef _PJS
 
