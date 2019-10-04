@@ -39,7 +39,7 @@ int Pop(IntStack *s, int *x) {
 	return 0;
 }
 int PopB(IntStack *s, int *y) {
-	if (s->ptrB >= max) {
+	if (s->ptrB >= 0) {
 		return -1;
 	}
 	*y = s->stk[++s->ptrB];

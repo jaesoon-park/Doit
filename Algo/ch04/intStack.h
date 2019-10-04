@@ -1,6 +1,6 @@
 #pragma once
-#define _PJS
-#ifdef _PJS
+#define _PJS1
+#ifdef _PJS1
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 typedef struct {
