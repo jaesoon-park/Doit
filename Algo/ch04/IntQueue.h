@@ -3,24 +3,29 @@
 #ifdef _PJS
 
 typedef struct {
-	int max;
-	int num;
-	int front;
-	int rear;
-	int *que;
-}IntQueue;
+	int max;      /* 큐의 최대 용량 */
+	int num;      /* 현재 요솟수 */
+	int front;      /* 맨 앞 요소를 가리키는 커서 */
+	int rear;      /* 맨 뒤 요소를 가리키는 커서 */
+	int *que;      /* 큐를 가리키는 포인터 */
+} Intqueue;
 
-int Initialize(IntQueue *q, int max);
-int Enque(IntQueue *q, int x);
-int Deque(IntQueue *q, int *x);
-int Peek(const IntQueue *q, int *x);
-void Clear(IntQueue *q);
-int Capacity(const IntQueue *q);
-int Size(const IntQueue *q);
-int IsEmpty(const IntQueue *q);
-int IsFull(const IntQueue *q);
-int Search(const IntQueue *, int x);
-void Print(const IntQueue *q);
-void Terminate(IntQueue *q);
+int Initialize(Intqueue *q, int max);
+int EnqueFront(Intqueue *q, int x);
+int EnqueRear(Intqueue *q, int x);
+int queFront(Intqueue *q, int *x);
+int queRear(Intqueue *q, int *x);
+int PeekFront(const Intqueue *q, int *x);
+int PeekRear(const Intqueue *q, int *x);
+void Clear(Intqueue *q);
+int Capacity(const Intqueue *q);
+int Size(const Intqueue *q);
+int IsEmpty(const Intqueue *q);
+int IsFull(const Intqueue *q);
+int Search(const Intqueue *q, int x);
+int Search2(const Intqueue *q, int x);
+void Print(const Intqueue *q);
+void Terminate(Intqueue *q);
+
 
 #endif
