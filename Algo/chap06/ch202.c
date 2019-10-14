@@ -7,17 +7,30 @@
 
 void bubble(int a[], int n)
 {
-	int i, j;
-	
-	for (i = 0; i < n - 1; i++) {
-		for (j = n - 1; j > i; j--)
-			if (a[j - 1] > a[j])
-				swap(int, a[j - 1], a[j]);
-	}
-}
+	int i, j, m;
+	int c = 0;
+	int s = 0;
 
-void Print() {
-	
+	for (i = 0; i < n - 1; i++) {
+		printf("패스%d：\n", i + 1);
+		for (j = n - 1; j > i; j--) {
+			for (m = 0; m < n - 1; m++)
+				printf("%3d %c", a[m], (m != j - 1) ? ' ' :
+				(a[j - 1] > a[j]) ? '+' : '-');
+			printf("%3d\n", a[n - 1]);
+
+			c++;
+			if (a[j - 1] > a[j]) {
+				s++;
+				swap(int, a[j - 1], a[j]);
+			}
+		}
+		for (m = 0; m < n; m++)
+			printf("%3d  ", a[m]);
+		putchar('\n');
+	}
+	printf("비교 %d회\n", c);
+	printf("교환 %d회\n", s);
 }
 
 int main(void)
@@ -25,8 +38,8 @@ int main(void)
 	int i, nx;
 	int *x;
 
-	puts("버블 정렬");
-	printf("요소 개수 : ");
+	puts("버블 정렬(과정 출력)");
+	printf("요솟수 : ");
 	scanf("%d", &nx);
 	x = calloc(nx, sizeof(int));
 
