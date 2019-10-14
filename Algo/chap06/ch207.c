@@ -8,30 +8,21 @@
 #ifdef _PJS
 void bubble(int a[], int n)
 {
-	int i, j, m;
-	int c = 0;
-	int s = 0;
+	int k = 0;
+	int i;
 
-	for (i = 0; i < n - 1; i++) {
-		printf("패스%d：\n", i + 1);
-		for (j = n - 1; j > i; j--) {
-			for (m = 0; m < n - 1; m++)
-				printf("%3d %c", a[m], (m != j - 1) ? ' ' :
-				(a[j - 1] > a[j]) ? '+' : '-');
-			printf("%3d\n", a[n - 1]);
-
-			c++;
+	while (k < n - 1) {
+		int j;
+		int last = n - 1;
+		for(j = n -1; j >k; j--)
 			if (a[j - 1] > a[j]) {
-				s++;
 				swap(int, a[j - 1], a[j]);
+				last = j;
 			}
-		}
-		for (m = 0; m < n; m++)
-			printf("%3d  ", a[m]);
-		putchar('\n');
+		k = last;
 	}
-	printf("비교를 %d회 했습니다.\n", c);
-	printf("교환을 %d회 했습니다.\n", s);
+		
+	
 }
 
 int main(void)

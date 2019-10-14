@@ -119,6 +119,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ch202.c" />
+    <ClCompile Include="ch207.c" />
+    <ClCompile Include="ch210.c" />
+    <ClCompile Include="ch214.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
