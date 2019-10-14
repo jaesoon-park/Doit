@@ -29,8 +29,8 @@ void bubble(int a[], int n)
 			printf("%3d  ", a[m]);
 		putchar('\n');
 	}
-	printf("비교 %d회\n", c);
-	printf("교환 %d회\n", s);
+	printf("비교를 %d회 했습니다.\n", c);
+	printf("교환을 %d회 했습니다.\n", s);
 }
 
 int main(void)
@@ -38,8 +38,8 @@ int main(void)
 	int i, nx;
 	int *x;
 
-	puts("버블 정렬(과정 출력)");
-	printf("요솟수 : ");
+	puts("버블 정렬");
+	printf("요소 개수 : ");
 	scanf("%d", &nx);
 	x = calloc(nx, sizeof(int));
 
