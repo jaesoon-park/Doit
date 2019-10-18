@@ -3,7 +3,6 @@
 #include <stdlib.h>
 
 #define swap(type,x,y) do { type t = x; x = y; y = t; }while(0)
-#define _PJS
 
 #ifdef _PJS
 void partition(int a[], int n)
