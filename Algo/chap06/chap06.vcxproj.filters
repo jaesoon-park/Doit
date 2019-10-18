@@ -27,5 +27,14 @@
     <ClCompile Include="ch214.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ch227.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ch230.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Quick.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

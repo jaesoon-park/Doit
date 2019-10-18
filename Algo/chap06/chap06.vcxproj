@@ -122,6 +122,9 @@
     <ClCompile Include="ch207.c" />
     <ClCompile Include="ch210.c" />
     <ClCompile Include="ch214.c" />
+    <ClCompile Include="ch227.c" />
+    <ClCompile Include="ch230.c" />
+    <ClCompile Include="Quick.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
