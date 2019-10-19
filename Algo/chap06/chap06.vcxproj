@@ -118,6 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="216Q8.c" />
     <ClCompile Include="ch202.c" />
     <ClCompile Include="ch207.c" />
     <ClCompile Include="ch210.c" />
