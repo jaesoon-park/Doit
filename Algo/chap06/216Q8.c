@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+#ifdef _PJS
 void insertion(int a[], int n)
 {
 	int i, j, m;
@@ -53,3 +53,4 @@ int main(void)
 
 	return 0;
 }
+#endif

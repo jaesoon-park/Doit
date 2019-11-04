@@ -125,6 +125,7 @@
     <ClCompile Include="ch214.c" />
     <ClCompile Include="ch227.c" />
     <ClCompile Include="ch230.c" />
+    <ClCompile Include="fsort(269).c" />
     <ClCompile Include="heap(263).c" />
     <ClCompile Include="merge(250).c" />
     <ClCompile Include="Quick.c" />

@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #define swap(type,x,y) do { type t = x; x = y; y = t; }while(0)
 
-#define _PJS
+
 #ifdef _PJS
 static void downheap(int a[], int left, int right)
 {
