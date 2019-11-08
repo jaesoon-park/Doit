@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include"IntSet.h"
 
+#ifdef _JS
 int Initialize(IntSet* s, int max) {
 	s->num = 0;
 	if ((s->set = calloc(max, sizeof(int))) == NULL) {
@@ -113,3 +114,4 @@ void Terminate(IntSet *s) {
 		s->max = s->num = 0;
 	}
 }
+#endif

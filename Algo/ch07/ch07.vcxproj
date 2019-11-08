@@ -19,9 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BitSet.h" />
     <ClInclude Include="IntSet.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BitSet.c" />
+    <ClCompile Include="BitSetTest.c" />
     <ClCompile Include="IntSet.c" />
     <ClCompile Include="IntSetTest1.c" />
     <ClCompile Include="IntSetTest2.c" />
