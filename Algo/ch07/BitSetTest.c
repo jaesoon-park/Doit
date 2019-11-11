@@ -39,6 +39,7 @@ int main(void) {
 			printf("s1 & s2 = "); PrintLn(s1 & s2);
 			printf("s1 | s2 = "); PrintLn(s1 | s2);
 			printf("s1 - s2 = "); PrintLn(s1 & ~s2);
+			printf("(s1 | s2) - (s1 & s2)"); PrintLn((s1 | s2) - (s1 & s2));
 			break;
 		case 6: x = scan_data(ADD); Add(&s2, x); break;
 		case 7: x = scan_data(RMB); Remove(&s2, x); break;
