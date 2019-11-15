@@ -118,6 +118,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bf_match.c" />
     <ClCompile Include="str_chr.c" />
     <ClCompile Include="str_cmp.c" />
     <ClCompile Include="str_len1.c" />
