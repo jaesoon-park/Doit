@@ -27,5 +27,14 @@
     <ClCompile Include="bf_match.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="bm_matchQ12.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bm_match.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="kmp_match.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

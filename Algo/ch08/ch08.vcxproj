@@ -119,6 +119,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="bf_match.c" />
+    <ClCompile Include="bm_match.c" />
+    <ClCompile Include="bm_matchQ12.c" />
+    <ClCompile Include="kmp_match.c" />
     <ClCompile Include="str_chr.c" />
     <ClCompile Include="str_cmp.c" />
     <ClCompile Include="str_len1.c" />
