@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ChainHash.c" />
+    <ClCompile Include="ChainHashTest.c" />
     <ClCompile Include="Member.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

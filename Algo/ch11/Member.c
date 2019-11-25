@@ -3,6 +3,7 @@
 #include <string.h>
 #include "Member.h"
 
+
 int MemberNoCmp(const Member *x, const Member *y) {
 	return x->no < y->no ? -1 : x->no > y->no ? 1 : 0;
 }

@@ -1,8 +1,7 @@
-#define _PJ
+#ifndef ___Member
+#define ___Member
 
-#ifdef _PJ
-
-typedef struct {
+typedef struct Member{
 	int no;
 	char name[20];
 }Member;

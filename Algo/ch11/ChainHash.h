@@ -1,6 +1,7 @@
-#define _PJS
-#ifdef _PJS
+#ifndef ___ChainHash
+#define ___ChainHash
 #include "Member.h"
+
 
 typedef struct __node {
 	Member data;
@@ -20,8 +21,10 @@ int Add(ChainHash *h, const Member *x);
 
 int Remove(ChainHash *h, const Member *x);
 
-void Demp(const ChainHash *h);
+void Dump(const ChainHash *h);
 
 void Clear(ChainHash *h);
+
+void Terminate(ChainHash *h);
 
 #endif
