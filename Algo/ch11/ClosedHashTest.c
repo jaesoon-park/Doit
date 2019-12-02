@@ -1,8 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include "Member.h"
-#include"ChainHash.h"
-#ifdef _PS
+#include"ClosedHash.h"
+
 
 typedef enum {
 	TERMINATE, ADD, DELETE, SEARCH, CLEAR, DUMP
@@ -20,19 +20,19 @@ Menu SelectMenu(void)
 
 int main(void) {
 	Menu menu;
-	ChainHash hash;
+	ClosedHash hash;
 	Initialize(&hash, 13);
 	do {
 		int result;
 		Member x;
-		Node *temp;
+		Bucket *temp;
 		switch (menu = SelectMenu()) {
 		case ADD:
 			x = ScanMember("추가", MEMBER_NO | MEMBER_NAME);
 			result = Add(&hash, &x);
 			if (result)
 				printf("\a오류 : 추가에 실패했습니다(%s).\n",
-				(result == 1) ? "이미 등룍됨" : "메모리 부족");
+				(result == 1) ? "등록 마침" : "메모리 부족");
 			break;
 		case DELETE:
 			x = ScanMember("삭제", MEMBER_NO);
@@ -62,5 +62,3 @@ int main(void) {
 
 	return 0;
 }
-
-#endif

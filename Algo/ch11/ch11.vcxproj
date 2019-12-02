@@ -120,11 +120,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ChainHash.h" />
+    <ClInclude Include="ClosedHash.h" />
     <ClInclude Include="Member.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ChainHash.c" />
     <ClCompile Include="ChainHashTest.c" />
+    <ClCompile Include="ClosedHash.c" />
+    <ClCompile Include="ClosedHashTest.c" />
     <ClCompile Include="Member.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,7 +1,7 @@
 #ifndef ___ChainHash
 #define ___ChainHash
 #include "Member.h"
-
+#ifdef _PS
 
 typedef struct __node {
 	Member data;
@@ -27,4 +27,5 @@ void Clear(ChainHash *h);
 
 void Terminate(ChainHash *h);
 
+#endif
 #endif

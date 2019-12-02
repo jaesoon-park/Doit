@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "Member.h"
 #include "ChainHash.h"
-
+#ifdef _PS
 
 static int hash(int key, int size) {
 	return key % size;
@@ -108,4 +108,4 @@ void Terminate(ChainHash *h)
 }
 
 
-
+#endif
