@@ -126,6 +126,7 @@
   <ItemGroup>
     <ClCompile Include="ChainHash.c" />
     <ClCompile Include="ChainHashTest.c" />
+    <ClCompile Include="chap11Q1.c" />
     <ClCompile Include="ClosedHash.c" />
     <ClCompile Include="ClosedHashTest.c" />
     <ClCompile Include="Member.c" />
